@@ -1,0 +1,86 @@
+.header .header__item {
+  padding: 15px 0;
+  background-color: #EFEFEF;
+  display: flex;
+  justify-content: space-around;
+}
+.header .header__item .header__logo .header__logo--img {
+  height: 72px;
+}
+.header .header__item .header__menu .header__menu--list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .header__item .header__menu .header__menu--list .header__menu--item {
+  padding: 0 20px;
+}
+.header .header__item .header__menu .header__menu--list .header__menu--item .header__menu--link {
+  color: black;
+  font-size: 24px;
+}
+.header .header__item .header__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.header .header__item .header__contacts .header__contacts--link {
+  color: black;
+  font-size: 20px;
+}
+
+.footer .footer__item {
+  padding: 15px 0;
+  background-color: #EFEFEF;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footer__item .footer__social .footer__social--list {
+  display: flex;
+}
+.footer .footer__item .footer__social .footer__social--list .footer__social--item {
+  margin-right: 20px;
+  font-size: 0;
+}
+.footer .footer__item .footer__social .footer__social--list .footer__social--item:last-child {
+  margin-right: 0;
+}
+.footer .footer__item .footer__social .footer__social--list .footer__social--item .footer__social--link {
+  padding: 10px;
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+.footer .footer__item .footer__social .footer__social--list .footer__social--item .footer__social--link::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 2px solid #f13c6e;
+  border-radius: 10px;
+  opacity: 0;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.footer .footer__item .footer__social .footer__social--list .footer__social--item .footer__social--link:hover::before {
+  transform: scale(0.9);
+  opacity: 1;
+}
+.footer .footer__item .footer__social .footer__social--list .footer__social--item .footer__social--link .footer__social--img {
+  height: 40px;
+}
+.footer .footer__item .footer__social .footer__social--list .footer__social--item .footer__social--link .youtube {
+  fill: #f13c6e;
+}
+.footer .footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer .footer__contacts .footer__contacts--link {
+  font-size: 20px;
+  color: black;
+}/*# sourceMappingURL=style.css.map */

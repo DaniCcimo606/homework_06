@@ -1,0 +1,99 @@
+.header {
+    .header__item {
+        padding: 15px 0;
+        background-color: #EFEFEF;
+        display: flex;
+        justify-content: space-around;
+        .header__logo {
+            .header__logo--img {
+                height: 72px;
+            }
+        }
+        .header__menu {
+            .header__menu--list {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                .header__menu--item {
+                    padding: 0 20px;
+                    .header__menu--link {
+                        color: black;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .header__contacts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .header__contacts--link {
+                color: black;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.footer {
+    .footer__item {
+        padding: 15px 0;
+        background-color: #EFEFEF;
+        display: flex;
+        justify-content: space-around;
+        .footer__social{
+            .footer__social--list {
+                display: flex;
+                .footer__social--item {
+                    margin-right: 20px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    font-size: 0;
+                    .footer__social--link {
+                        padding: 10px;
+                        display: block;
+                        overflow: hidden;
+                        border-radius: 10px;
+                        position: relative;
+                        &::before {
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            border: 2px solid #f13c6e;
+                            border-radius: 10px;
+                            opacity: 0;
+                            transform: scale(1.2);
+                            transition: all .3s ease-in-out;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                        }
+                        &:hover {
+                            & {
+                                &::before {
+                                    transform: scale(0.9);
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .footer__social--img {
+                            height: 40px;
+                        }
+                        .youtube {
+                            fill: #f13c6e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .footer__contacts--link {
+            font-size: 20px;
+            color: black;
+        }
+    }
+}
