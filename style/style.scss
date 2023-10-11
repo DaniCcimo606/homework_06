@@ -7,8 +7,10 @@
         display: flex;
         justify-content: space-around;
         .header__logo {
-            .header__logo--img {
-                height: 72px;
+            a {
+                .header__logo--img {
+                    height: 72px;
+                }
             }
         }
         .header__menu {
@@ -32,6 +34,44 @@
             .header__contacts--link {
                 color: black;
                 font-size: 20px;
+            }
+        }
+    }
+}
+.main {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 135px 0 29px;
+    .main__item {
+        .main__layout {
+            display: flex;
+            flex-wrap: wrap;
+            .main__layout--item {
+                width: calc(100% / 3);
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                a {
+                    .main__layout--img {
+                        width: 275px;
+                        height: 185px;
+                    }
+                }
+                .main__layout--description {
+
+                }
+                form {
+                    text-align: center;
+                    .main__btn--buy {
+                        margin-top: 10px;
+                        padding: 5px 25px;
+                        border: 1px solid #f13c6e;
+                        border-radius: 20px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
